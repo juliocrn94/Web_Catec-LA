@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../css/hero.css';
 
-import Nav from "./Nav"
+import Services from "./Services"
 
 import hero_bg from '../images/hero-bg.jpg'
 import logo from '../images/logo.png'
@@ -9,10 +9,10 @@ import logo from '../images/logo.png'
 export default class Hero extends Component {
     render() {
         return (
+            <>
             <div className="hero">
                 <div className="hero-inner">
                     <div className="hero-titles">
-                        <p>WHAT WE DO</p>
                         <h1 className="t1">Energy Sector</h1>
                         <h1 className="t2">Consulting & Representation</h1>
                     </div>
@@ -24,6 +24,8 @@ export default class Hero extends Component {
                     </div>
                 </div>
             </div>
+            < Services />
+            </>
         )
     }
 }

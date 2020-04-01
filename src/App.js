@@ -9,9 +9,6 @@ import {
 
 //import componentes
 import Nav from "./components/Nav"
-import Hero from "./components/Hero"
-import Services from "./components/Services"
-
 import Routes from "./components/Routes"
 
 
