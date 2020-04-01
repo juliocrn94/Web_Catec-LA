@@ -8,13 +8,19 @@ import {
 } from "react-router-dom";
 
 //import componentes
+import Nav from "./components/Nav"
 import Hero from "./components/Hero"
+import Services from "./components/Services"
+
+import Routes from "./components/Routes"
 
 
 function App() {
   return (
     <div className="App">
-      <Hero />
+      <Nav class="hero-nav"/>
+
+      <Routes />
     </div>
   );
 }

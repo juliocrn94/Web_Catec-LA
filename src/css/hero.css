@@ -1,0 +1,132 @@
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 80vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+
+    /* Background styles */
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+    /* background-color: #1A826B; */
+    background-blend-mode: multiply;
+
+    color: white;
+}
+
+.hero-inner {
+    /* Sizing */
+    width: inherit;
+    height: inherit;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80% 20%;
+    grid-template-areas: 
+    "titles"
+    "subtitles";
+}
+/*################################################################*/
+/* Nav Menu                                                       */
+/*################################################################*/
+
+.hero-nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3em;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 1em;
+}
+
+
+.navbar__link {
+    padding: 0 .5em;
+    margin: 0 .5em;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    text-indent: .3em;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar__link:hover {
+    transform: translateY(-2px);
+}
+
+.navbar__link--active {
+    color: white;
+    border-bottom: 3px solid white;
+    transition: border-bottom .5s ease-in-out;
+}
+
+/*################################################################*/
+/* Hero                                                           */
+/*################################################################*/
+
+.hero-titles {
+    grid-area: titles;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3em;
+}
+
+.hero-text {
+    grid-area: subtitles;
+    display: flex;
+}
+
+.t1 {
+        /* Text styles */
+        font-size: 5em;
+        /* Margins */
+        margin-top: 0;
+        margin-bottom: 0.5em;
+}
+
+.t2 {
+    /* Text styles */
+    font-size: 5em;
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: #36DAB4;
+}
+
+.subtext {
+    width: 80%;
+    height: 70%;
+    border: solid 1px white;
+    border-left: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    padding: .5em 3em;
+}
+
+.subtext-h {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.subtext-b {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: ;
+}
