@@ -1,38 +1,30 @@
-.hero {
-    /* Sizing */
-    width: 100vw;
-    height: 80vh;
-    
-    /* Flexbox stuff */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: start;
+/*################################################################*/
+/* Titles                                                        */
+/*################################################################*/
 
-    /* Background styles */
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: black;
-    /* background-color: #1A826B; */
-    background-blend-mode: multiply;
-
-    color: white;
+.t1 {
+        /* Text styles */
+        font-size: 5em;
+        /* Margins */
+        margin-top: 0;
+        margin-bottom: 0.5em;
 }
 
-.hero-inner {
-    /* Sizing */
-    width: inherit;
-    height: inherit;
-    
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 80% 20%;
-    grid-template-areas: 
-    "titles"
-    "subtitles";
+.t2 {
+    /* Text styles */
+    font-size: 5em;
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: #36DAB4;
 }
+
+.t3 {
+    font-weight: 400;
+    font-size: 3em;
+    color: #30233D;
+}
+
 /*################################################################*/
 /* Nav Menu                                                       */
 /*################################################################*/
@@ -75,6 +67,42 @@
 /* Hero                                                           */
 /*################################################################*/
 
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 80vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+
+    /* Background styles */
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+    /* background-color: #1A826B; */
+    background-blend-mode: multiply;
+
+    color: white;
+}
+
+.hero-inner {
+    /* Sizing */
+    width: inherit;
+    height: inherit;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80% 20%;
+    grid-template-areas: 
+    "titles"
+    "subtitles";
+}
+
 .hero-titles {
     grid-area: titles;
     display: flex;
@@ -88,32 +116,9 @@
     display: flex;
 }
 
-.t1 {
-        /* Text styles */
-        font-size: 5em;
-        /* Margins */
-        margin-top: 0;
-        margin-bottom: 0.5em;
-}
-
-.t2 {
-    /* Text styles */
-    font-size: 5em;
-    /* Margins */
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    color: #36DAB4;
-}
-
-.t3 {
-    font-weight: 400;
-    font-size: 3em;
-    color: #30233D;
-}
-
 .subtext {
     width: 80%;
-    height: 70%;
+    height: 70%; 
     border: solid 1px white;
     border-left: none;
     display: flex;
@@ -141,8 +146,16 @@
 /* Services                                                           */
 /*################################################################*/
 
-.services {
-    
+.serv-inner {
     padding: 4em 0 0 3em;
     text-align: left;
+}
+
+
+.serv-cards {
+    display: grid;
+    grid-template-columns: 34% 32% 34%;
+    grid-template-rows: 25em;
+    grid-template-areas: 
+    "card1 card2 card3";
 }
